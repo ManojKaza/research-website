@@ -30,7 +30,7 @@ function NavBar() {
 
     const handleMouseHover = () => {
         clearTimeout(hoverTimeout)
-        window.innerWidth< 768 ? setDropDown(false) : setDropDown(true);
+        setDropDown(true);
     };
 
     const handleMouseExit = () => {
