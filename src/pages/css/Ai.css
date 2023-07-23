@@ -1,0 +1,11 @@
+.page-container {
+    background-image: url('../images/ai.jpg');
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    color: #fff;
+}
