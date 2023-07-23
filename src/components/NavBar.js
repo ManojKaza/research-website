@@ -22,7 +22,11 @@ function NavBar() {
     const [dropDown,setDropDown] = useState(false);
     const [hoverTimeout,setHoverTimeout] = useState(null);
 
-    const handleDropDown = () => {setDropDown(!dropDown)};
+    const handleDropDown = () => {
+        if (window.innerWidth >= 768) {
+            setDropDown(!dropDown)
+        }
+    };
 
     const handleMouseHover = () => {
         clearTimeout(hoverTimeout)
