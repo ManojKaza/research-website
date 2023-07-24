@@ -55,6 +55,7 @@
 
 .mobile {
     display: none;
+    padding-right: 20px;
 }
 
 .mobile i {
