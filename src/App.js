@@ -9,26 +9,14 @@ function App() {
     <Router>
       <div className="app-container">
         <NavBar />
-        <div className='content-container'>
+        <div className='app-content-container'>
           <Routes>
             <Route path= '/' element={<Home />} />
-          </Routes>
-          <Routes>
             <Route path= 'aboutus' element={<AboutUs />} />
-          </Routes>
-          <Routes>
             <Route path= 'services' element={<Services />} />
-          </Routes>
-          <Routes>
             <Route path= 'ai' element={<Ai />} />
-          </Routes>
-          <Routes>
             <Route path= 'ml' element={<Ml />} />
-          </Routes>
-          <Routes>
             <Route path= 'research' element={<Research />} />
-          </Routes>
-          <Routes>
             <Route path= 'contact' element={<ContactUs />} />
           </Routes>
         </div>

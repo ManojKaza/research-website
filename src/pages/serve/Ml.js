@@ -1,11 +1,11 @@
 import React from 'react';
-import '../css/Ml.css';
-import  ml from '../images/ml.jpg';
+import '../css/page.css';
+import HeroSection from '../../components/body_components/HeroSection';
 function Ml () {
     return(
         <>
-            <div className='page-container' style={{ backgroundImage: `url(${ml})` }}>
-                <h1>Machine Learning</h1>
+            <div className='page-container'>
+               <HeroSection label='ml' height='400px'/>
             </div>
         </>
     )

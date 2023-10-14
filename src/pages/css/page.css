@@ -1,0 +1,6 @@
+.page-container {
+    display: flex;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: #fff;
+}

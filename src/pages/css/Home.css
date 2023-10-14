@@ -1,11 +1,108 @@
-.page-container {
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
+.home-page-container {
     display: flex;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 100vh;
-    color: #fff;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
+.body-content-container {
+    width: 100%;
+    max-width: 2000px; /* Increase the maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add some padding around the content */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    /* Remove background-color */
+    border: 2px solid #ccc; /* Add a border for visual separation */
+}
+
+  
+.home-content-container {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.home-content-container-width{
+    display: flex;
+    flex-direction: row;
+} 
+.home-card-container {
+    width: 70%;
+    display: flex;
+    justify-content:space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.home-content-container-text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 10px; 
+}
+  
+.home-content-container h1 {
+    font-size: 32px;
+    color: #333;
+    margin: 0;
+  }
+  
+.home-content-container-text p {
+    margin: 0; 
+}
+.home-content-container-images {
+    margin-top: 20px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.home-content-container-images img {
+    width: 200px; /* Set the desired width for the images */
+    height: 250px; /* Set the desired height for the images */
+    object-fit: cover; /* Maintain aspect ratio while covering the container */
+    border-radius: 8px; /* Add some border-radius for rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a slight shadow for depth */
+}
+
+
+/* Add styles for the "Learn More" button */
+.learn-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.learn-more-button:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .home-content-container-width {
+        flex-direction: column;
+    }
+    .home-content-container-text{
+        width: 100%;
+    }
+    .home-content-container-images {
+        width: 100%; /* Full width on smaller screens */
+        align-items: center; /* Center both horizontally and vertically */
+    }
+    .home-card-container{
+        width: 100%;
+    }
+}

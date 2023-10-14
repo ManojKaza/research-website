@@ -1,11 +1,11 @@
 import React from 'react';
-import '../css/Ai.css';
-import  ai from '../images/ai.jpg';
+import '../css/page.css';
+import HeroSection from '../../components/body_components/HeroSection';
 function Ai () {
     return(
         <>
-            <div className='page-container' style={{ backgroundImage: `url(${ai})` }}>
-                <h1>Artificial Intelligence</h1>
+            <div className='page-container'>
+               <HeroSection label='ai' height= '400px'/>
             </div>
         </>
     )
